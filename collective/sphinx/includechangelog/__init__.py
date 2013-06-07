@@ -21,7 +21,7 @@ class IncludeChangelog(Directive):
                  block_text,        # ignored
                  state,
                  state_machine,     # ignored
-                ):
+                 ):
         assert directive == 'includechangelog'
         assert len(arguments) == 1
         self.module = arguments[0]
