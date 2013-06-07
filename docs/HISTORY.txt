@@ -1,11 +1,15 @@
 Changelog
 =========
 
-0.1 (xxxx-xx-xx)
-----------------
+0.1.1 (unreleased)
+------------------
 
 * Fix when package referred by directive is not found.
   [gotcha]
+
+
+0.1 (2009-11-23)
+----------------
 
 * Initial private release.
   [jfroche]
