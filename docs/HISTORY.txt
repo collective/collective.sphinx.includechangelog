@@ -4,4 +4,8 @@ Changelog
 0.1 (xxxx-xx-xx)
 ----------------
 
-* Initial release
+* Fix when package referred by directive is not found.
+  [gotcha]
+
+* Initial private release.
+  [jfroche]

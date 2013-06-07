@@ -30,7 +30,13 @@ class IncludeChangelog(Directive):
 
     def run(self):
         doc = ViewList()
-        packageInfos = pkg_resources.WorkingSet().find(pkg_resources.Requirement.parse(self.module))._get_metadata('PKG-INFO')
+        req_string = pkg_resources.Requirement.parse(self.module)
+        active = pkg_resources.WorkingSet().find(req_string)
+        if not active:
+            msg = 'includechangelog - package "{0}" not found.'.format(
+                self.module)
+            return [self.state.document.reporter.error(msg)]
+        packageInfos = active._get_metadata('PKG-INFO')
         addLine = False
         doc.append(u'', '<includedoc>')
         for line in packageInfos:
