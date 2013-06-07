@@ -10,6 +10,7 @@ setup(name='collective.sphinx.includechangelog',
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
         "Operating System :: OS Independent",
         "Topic :: Documentation",
         "Topic :: Software Development :: Libraries :: Python Modules",
