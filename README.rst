@@ -7,7 +7,7 @@ do the same but via code (using setuptools methods).
 Usage
 =====
 
-Add a depedency on ``collective.sphinx.includechangelog``.
+Add a dependency on ``collective.sphinx.includechangelog``.
 
 And just add into your sphinx document::
 
