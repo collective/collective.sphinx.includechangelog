@@ -5,16 +5,17 @@ version = '0.1'
 
 setup(name='collective.sphinx.includechangelog',
       version=version,
-      description="Add the changelog taken from an egg information with setuptools into sphinx documentation",
+      description="Include changelog extracted from egg information "
+                  " into sphinx documentation.",
       long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
-        "Operating System :: OS Independent",
-        "Topic :: Documentation",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2.7",
+          "Operating System :: OS Independent",
+          "Topic :: Documentation",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+      ],
       keywords='sphinx changelog',
       author='Jean Francois Roche',
       author_email='jfroche@affinitic.be',
