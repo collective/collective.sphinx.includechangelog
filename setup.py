@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.2.dev0'
+version = '0.1'
 
 setup(name='collective.sphinx.includechangelog',
       version=version,
       description="Include changelog extracted from egg information "
-                  " into sphinx documentation.",
-      long_description=open("README.txt").read() + "\n" +
+                  "into sphinx documentation.",
+      long_description=open("README.rst").read() + "\n" +
       open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
           "Programming Language :: Python",
